@@ -1,7 +1,7 @@
 CC=gcc
-ARCH=pentium-m
+ARCH=native
 CFLAGS=-Wall -Wextra -pedantic -std=c99 -Ofast -march=$(ARCH) -Ithirdparty
-LDFLAGS=-flto
+LDFLAGS=-flto -lm
 TARGET=tstbv
 RM=rm
 RMFLAGS=-f

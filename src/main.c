@@ -43,7 +43,7 @@ int main(int argc, char *argv[]){
 	unsigned char *image = stbi_load(argv[1], &x, &y, &n, 3);
 
 	if (!image){
-		printf("THERE IS AN ERROR IN LOADING THE IMAGE!!!\n");
+		puts("THERE IS AN ERROR IN LOADING THE IMAGE!!!");
 		return 1;
 	}
 
